@@ -95,17 +95,13 @@ message1Input.value = localStorage.getItem("message1") || "";
 
 message1Input.addEventListener("input", function() {
 
-  localStorage.setItem("message1", message1Input.value);});
-
-	var message1Input = document.getElementById("message2");
-
-message2Input.value = localStorage.getItem("message2") || "";
-
-
-message2Input.addEventListener("input", function() {
-
-  localStorage.setItem("message2", message2Input.value);
+  localStorage.setItem("message1", message1Input.value);
 });
+	     var message2Input = document.getElementById("message2");
+    message2Input.value = localStorage.getItem("message2") || "";
+    message2Input.addEventListener("input", function() {
+      localStorage.setItem("message2", message2Input.value);
+    });
 	</script>
 </body>
 </html>
