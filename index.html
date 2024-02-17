@@ -53,7 +53,7 @@
 <p>To小小爱，<br>你好，以后有关于小小豪可以来这里吐槽他哦，不管是他惹你生气了，说错什么话做错了什么事，来这里告诉他会不会比直接告诉她显的更好一点，让他深刻认识到自己的错误，好好改正。他真的真的很爱你，离不开你，想和你有未来，度过每一个平淡的日子，可能他不善言辞，不会表达，很笨很直男，但是他会把最好的都给你，你不喜欢的事他都不会去做，你让他向东他就不敢向西，典型的怕老婆，一定要好好管着他哦，有什么想说的话可以告诉我哦。<br><br>
     <textarea id="message1" rows="4" cols="50"></textarea></p>
 <p>To小小豪，<br>你好，你个臭小子，追到这种女朋友也不知道上辈子做了什么好事，一定要好好对人家哦，不要一直惹人家生气，也学一学网上怎么哄女生，怎么制造惊喜，好的礼物不一定是最贵的呀，你亲手准备的在她的心里才是最好的，要好好的宠着她，管好自己的脾气，有理也不能凶，要好好说话，凶跑了看你后不后悔。<br> <br>
-    <textarea id="message1" rows="4" cols="50"></textarea></p>
+    <textarea id="message2" rows="4" cols="50"></textarea></p>
     <p>我们的回忆：You can see some photos representing our romance:
 	<a href="romance.html"><span style="color: red;">❤❤❤</span></a></p>
   </div>
@@ -96,6 +96,15 @@ message1Input.value = localStorage.getItem("message1") || "";
 message1Input.addEventListener("input", function() {
 
   localStorage.setItem("message1", message1Input.value);
+
+	var message1Input = document.getElementById("message2");
+
+message1Input.value = localStorage.getItem("message2") || "";
+
+
+message1Input.addEventListener("input", function() {
+
+  localStorage.setItem("message2", message1Input.value);
 });
 	</script>
 </body>
